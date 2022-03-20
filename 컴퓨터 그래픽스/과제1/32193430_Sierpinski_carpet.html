@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>2D Sierpinski Gasket</title>
+
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+
+void
+main()
+{
+    gl_Position = vPosition;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+
+void
+main()
+{
+    gl_FragColor = vec4( 0.0, 0.0, 1.0, 1.0 ); 
+}
+</script>
+<!--색깔과 투명도를 나타냄-->
+<script type="text/javascript" src="C:\Users\ETRI\Desktop\2021_2학기\컴퓨터_그래픽스\과제1\32193430_컴퓨터_그래픽스_과제 1_Sierpinski_Carpet\webgl-utils.js"></script>
+<script type="text/javascript" src="C:\Users\ETRI\Desktop\2021_2학기\컴퓨터_그래픽스\과제1\32193430_컴퓨터_그래픽스_과제 1_Sierpinski_Carpet\initShaders.js"></script>
+<script type="text/javascript" src="C:\Users\ETRI\Desktop\2021_2학기\컴퓨터_그래픽스\과제1\32193430_컴퓨터_그래픽스_과제 1_Sierpinski_Carpet\MV.js"></script>
+<script type="text/javascript" src="32193430_이재원_Sierpinski_carpet(최종).js"></script>
+</head>   
+
+<body>
+<canvas id="gl-canvas" width="512" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+</body>
+</html>
